@@ -1,0 +1,62 @@
+n, m = map(int, input().split())
+board = [[False for i in range(n)] for k in range(n)]
+
+def onBoard(x, y, n):
+    if 0 <= x < n and 0 <= y < n:
+        return True
+    return False
+
+def markHorizontal(innerList, idx, n):
+  for i in range(n): 
+    board[innerList][i] = True
+
+def markVertical(innerList, idx, n):
+  for i in range(n):
+    board[i][idx] = True
+
+def movingDownAndLeft(innerList, idx, n):
+  while onBoard(innerList, idx, n):
+    board[innerList][idx] = True
+    innerList += 1
+    idx -= 1
+
+def movingUpAndRight(innerList, idx, n):
+  while onBoard(innerList, idx, n):
+    board[innerList][idx] = True
+    innerList -= 1
+    idx += 1
+def movingUpAndLeft(innerList, idx, n):
+  while onBoard(innerList, idx, n):
+    board[innerList][idx] = True
+    innerList -= 1
+    idx -= 1
+
+def movingDownAndRight(innerList, idx, n):
+  while onBoard(innerList, idx, n):
+    board[innerList][idx] = True
+    innerList += 1
+    idx += 1
+
+def markDiagonals(innerList, idx, n):
+    movingDownAndLeft(innerList, idx, n)   
+    movingDownAndRight(innerList, idx, n)
+    movingUpAndLeft(innerList, idx, n)
+    movingUpAndRight(innerList, idx, n)
+
+for i in range(m):
+    x, y = map(int, input().split())
+    #get coordinates to 0-indexing
+    x -= 1
+    y -= 1
+
+    markHorizontal(x, y, n)
+    markVertical(x, y, n)
+    markDiagonals(x, y, n)
+
+ans = 0
+for i in range(n):
+    for k in range(n):
+        if board[i][k] == False:
+            ans += 1
+
+print(ans)
