@@ -1,0 +1,14 @@
+import math
+num = int(input())
+x = 0
+y = 0
+big = 0
+point = []
+for i in range(num):
+  a, b = map(int, input().split())
+  dist = math.sqrt((a-x)**2+(b-y)**2)
+
+  if dist > big:
+    big = dist
+    point = [a, b]
+print(*point)
