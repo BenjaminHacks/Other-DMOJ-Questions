@@ -1,0 +1,9 @@
+x,y = map(int, input().split())
+mylist = []
+for i in range(x):
+  a = int(input())
+  mylist.append(a)
+  if a > y:
+    mylist.remove(a)
+
+print(sum(mylist))
