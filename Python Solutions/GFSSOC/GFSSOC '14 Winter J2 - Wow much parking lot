@@ -1,0 +1,15 @@
+n = int(input())
+start = 0
+start1 = 0
+for i in range(n):
+  a = input()
+  b = int(input())
+  if a == "North":
+    start= start + b
+  elif a =="South":
+    start= start - b
+  elif a =="East":
+    start1= start1 + b
+  elif a == "West":
+    start1 = start1 - b
+print(start1, start)
