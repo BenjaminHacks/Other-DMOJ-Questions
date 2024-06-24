@@ -1,0 +1,8 @@
+x = int(input())
+mylist = []
+for i in range(x):
+  y = int(input())
+  y = abs(y)
+  mylist.append(len(str(y)))
+for i in mylist:
+  print(i)
