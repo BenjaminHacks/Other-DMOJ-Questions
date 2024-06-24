@@ -1,0 +1,13 @@
+mylist = ["WHITE", "BLUE", "RED"]
+
+mylist2 = []
+
+for i in range(2):
+  mylist2.append(input())
+
+if "WHITE" not in mylist2:
+  print("WHITE")
+elif "BLUE" not in mylist2:
+  print("BLUE")
+else:
+  print("RED")
