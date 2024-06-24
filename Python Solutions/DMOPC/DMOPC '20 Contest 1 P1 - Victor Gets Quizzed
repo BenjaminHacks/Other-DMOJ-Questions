@@ -1,0 +1,12 @@
+mylist = []
+x = int(input())
+for i in range(x):
+  y = input()
+  mylist.append(y)
+for i in mylist:
+  if i.count("M") == 0 and i.count("C") == 0:
+    print("PASS")
+  elif i.count("M") == 1 and i.count("C") == 1:
+    print("NEGATIVE MARKS")
+  else:
+    print("FAIL")
