@@ -1,0 +1,7 @@
+x = int(input())
+mylist = []
+for i in range(x):
+  a, b = map(float,input().split())
+  mylist.append(f"{a**b:.2f}")
+for i in mylist:
+  print(i)
