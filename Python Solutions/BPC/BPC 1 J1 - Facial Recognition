@@ -1,0 +1,9 @@
+y = int(input())
+mylist = []
+counter = 0
+for i in range(y):
+  mylist.append(input())
+for i in mylist:
+  if i == "face":
+    counter += 1
+print(counter)
