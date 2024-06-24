@@ -1,0 +1,22 @@
+x = int(input())
+mylist = []
+for i in range(x):
+  y = float(input())
+  if y < 34:
+    mylist.append("Too cold, please try again.")
+  elif y >= 34 and y <= 35.5:
+      mylist.append("Take a hot bath.")
+  elif y > 35.5 and y <= 38:
+     mylist.append("Rest if feeling unwell.")
+  elif y > 38 and y <= 39:
+   mylist.append("Take some medicine.")
+  elif y > 39 and y <= 41:
+     mylist.append("Take a cold bath and some medicine.")
+  elif y > 41 and y <= 46.1:
+     mylist.append("Go to the hospital.")
+  elif y > 46.1 and y <= 50:
+     mylist.append("Congrats, you have a new world record!")
+  elif y > 50:
+     mylist.append("Too hot, please try again.")
+for i in mylist:
+  print(i)
