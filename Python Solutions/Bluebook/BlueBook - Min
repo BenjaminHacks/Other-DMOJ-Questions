@@ -1,0 +1,6 @@
+x = int(input())
+mylist = []
+for i in range(x):
+  mylist.append(float(input()))
+y = min(mylist)
+print(f"{y:.2f}")
