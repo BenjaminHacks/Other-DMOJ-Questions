@@ -1,0 +1,31 @@
+from collections import deque
+
+numHouses, numRoads, start, dest = map(int,input().split())
+
+visited = [False for i in range(numHouses+1)]
+adjacencylist = [[] for i in range(numHouses+1)]
+
+dq = deque()
+
+for i in range(numRoads):
+  firstHouse, secondHouse = map(int,input().split())
+  adjacencylist[firstHouse].append(secondHouse)
+  adjacencylist[secondHouse].append(firstHouse)
+
+dq.append(start)
+
+while len(dq) > 0:
+  currentNode = dq.pop()
+
+  if visited[currentNode]:
+    continue
+  visited[currentNode] = True
+  for possibleNode in adjacencylist[currentNode]:
+    if not visited[possibleNode]:
+      dq.append(possibleNode)
+
+if visited[dest]:
+  print("GO SHAHIR!")
+else:
+  print("NO SHAHIR!")
+
