@@ -1,0 +1,12 @@
+import math
+x, y, z = map(int, input().split())
+
+listofnums = []
+listofnums.append(x)
+listofnums.append(y)
+listofnums.append(z)
+
+answer = 0
+for i in listofnums:
+  answer += math.ceil(i/3)
+print(answer)
