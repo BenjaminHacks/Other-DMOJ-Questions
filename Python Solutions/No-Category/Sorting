@@ -1,0 +1,9 @@
+n = int(input())
+lis = []
+for i in range(n):
+    x = int(input())
+    lis.append(x)
+    
+lis.sort()
+for num in lis:
+    print(num)
