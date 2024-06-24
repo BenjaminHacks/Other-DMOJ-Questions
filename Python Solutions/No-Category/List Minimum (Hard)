@@ -1,0 +1,7 @@
+x = int(input())
+listofnums = []
+for i in range(x):
+  listofnums.append(int(input()))
+listofnums.sort()
+for i in listofnums:
+  print(i)
