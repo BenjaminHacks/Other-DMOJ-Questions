@@ -1,0 +1,8 @@
+x,y,z = int(input()), int(input()), int(input())
+squaredy = y**2
+squaredz = z**2
+
+if abs(x-squaredy) > abs(x-squaredz):
+  print(2)
+elif abs(x-squaredy) < abs(x-squaredz):
+  print(1)
