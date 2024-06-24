@@ -1,0 +1,10 @@
+width = int(input())
+height = int(input())
+
+board = [[1 for i in range(width)]for k in range(height)]
+for innerList in range(height):
+  for idx in range(width):
+    if innerList%2 == idx%2:
+      board[innerList][idx] = 0
+for i in range(height):
+  print(*board[i], sep = "")
