@@ -1,0 +1,12 @@
+mylist = []
+x = int(input())
+for i in range(x):
+  mylist.append(input())
+
+for i in mylist:
+  if len(i) == 10 and i[:3] == "416":
+    print(f"({i[:3]})-{i[3:6]}-{i[6:10]}")
+  elif len(i) == 10 and i[:3] == "647":
+    print(f"({i[:3]})-{i[3:6]}-{i[6:10]}")
+  else:
+    print("not a phone number")
