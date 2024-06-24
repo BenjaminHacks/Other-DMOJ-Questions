@@ -1,0 +1,14 @@
+x = input()
+mylist = list(x[0:3])
+mylist2 = list(x[4:7])
+mylist3 = list(x[8:12])
+for i in range(len(mylist)):
+  mylist[i] = int(mylist[i])
+for i in range(len(mylist2)):
+  mylist2[i] = int(mylist2[i])
+for i in range(len(mylist3)):
+  mylist3[i] = int(mylist3[i])
+if sum(mylist) == sum(mylist2) == sum(mylist3):
+  print("Goony!")
+else:
+  print("Pick up the phone!")
