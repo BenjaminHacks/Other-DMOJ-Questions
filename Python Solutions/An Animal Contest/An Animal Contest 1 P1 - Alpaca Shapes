@@ -1,0 +1,5 @@
+a, b = map(int, input().split())
+if a**2 > 3.14*(b**2):
+  print("SQUARE")
+elif a**2 < 3.14*(b**2):
+  print("CIRCLE")
