@@ -1,0 +1,8 @@
+x = float(input())
+y = float(input())
+if x == 0 and y == 0:
+  print("indeterminate")
+elif x == 0:
+  print("undefined")
+else:
+  print(f"{-y/x:.2f}")
