@@ -1,0 +1,10 @@
+x = input()
+y = input()
+mylist = list(y)
+spot = len(mylist)
+if mylist[spot-1] == 's':
+  print(f"{x}-tu les {y} ?")
+elif mylist[spot-1] == 'e':
+  print(f"{x}-tu la {y} ?")
+else:
+  print(f"{x}-tu le {y} ?")
