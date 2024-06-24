@@ -1,0 +1,20 @@
+x = int(input())
+mylist = []
+test = []
+for i in range(x):
+  mylist.append(int(input()))
+for i in mylist:
+  if i >= 0 and i < 50:
+    test.append("F")
+  elif i >= 50 and i < 60:
+    test.append("D")
+  elif i >= 60 and i < 70:
+    test.append("C")
+  elif i >= 70 and i < 80:
+    test.append("B")
+  elif i >= 80 and i <= 100:
+    test.append("A")
+  else:
+    test.append("X")
+for i in test:
+  print(i)
