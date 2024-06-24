@@ -1,0 +1,15 @@
+x = list(map(str, input().split()))
+
+
+if x.count("True") == 1:
+  counter = 0
+elif x.count("False") == 1:
+  counter = 1
+
+counter += x.count("not")
+
+
+if counter % 2 == 0:
+  print("True")
+elif counter % 2 == 1:
+  print("False")
