@@ -1,0 +1,15 @@
+x = input()
+if x == "MG":
+  print("midget girls")
+elif x == "MB":
+  print("midget boys")
+elif x == "JG":
+  print("junior girls")
+elif x == "JB":
+  print("junior boys")
+elif x == "SG":
+  print("senior girls")
+elif x == "SB":
+  print("senior boys")
+else:
+  print("invalid code")
