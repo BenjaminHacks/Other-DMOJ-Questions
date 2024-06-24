@@ -1,0 +1,6 @@
+x = int(input())
+x-=1
+
+answer = ("far, "*x)
+
+print("A long time ago in a galaxy " + answer + "far away...")
