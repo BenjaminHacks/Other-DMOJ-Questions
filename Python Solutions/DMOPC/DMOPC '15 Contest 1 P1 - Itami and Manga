@@ -1,0 +1,10 @@
+n = int(input())
+maxval = 0
+maxname = ""
+for i in range(n):
+    a, b = map(str, input().split())
+    b = float(b)
+    if (b > maxval):
+        maxval = b
+        maxname = a
+print(maxname)
