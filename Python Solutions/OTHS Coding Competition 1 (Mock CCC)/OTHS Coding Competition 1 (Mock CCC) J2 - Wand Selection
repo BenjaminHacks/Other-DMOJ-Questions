@@ -1,0 +1,11 @@
+import math
+y = int(input())
+mylist = []
+counter = 0
+for i in range(y):
+  mylist.append(int(input()))
+x = mylist.index(max(mylist))
+del mylist[x]
+for i in mylist:
+  counter += i
+print(math.floor(counter/len(mylist)))
