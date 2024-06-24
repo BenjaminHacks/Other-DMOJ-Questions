@@ -1,0 +1,2 @@
+b = int(input())
+print(f"${b/2:.2f} ${b/2:.2f}")
