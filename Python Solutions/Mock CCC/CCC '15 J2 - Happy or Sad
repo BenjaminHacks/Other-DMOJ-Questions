@@ -1,0 +1,15 @@
+x = input()
+def findhappiness(z):
+  y = z.count(":-)")
+  return y
+def sadness(a):
+  b = a.count(":-(")
+  return b
+if findhappiness(x) == 0 and sadness(x) == 0:
+  print("none")
+elif findhappiness(x) == sadness(x):
+  print("unsure")
+elif findhappiness(x) > sadness(x):
+  print("happy")
+elif findhappiness(x) < sadness(x):
+  print("sad")
