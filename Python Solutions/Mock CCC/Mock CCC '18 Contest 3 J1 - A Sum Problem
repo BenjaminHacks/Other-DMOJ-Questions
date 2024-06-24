@@ -1,0 +1,6 @@
+i =int(input())
+total = 0
+for i in range(i):
+  c = int(input())
+  total += c
+print(total)
