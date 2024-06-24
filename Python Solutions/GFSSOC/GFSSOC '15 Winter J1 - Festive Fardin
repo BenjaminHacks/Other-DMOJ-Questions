@@ -1,0 +1,7 @@
+mylist = ["red","green","white"]
+x = input()
+y = input()
+if x in mylist and y in mylist:
+  print("Jingle Bells")
+else:
+  print("Boring...")
