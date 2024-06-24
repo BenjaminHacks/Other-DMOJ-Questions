@@ -1,0 +1,19 @@
+y = int(input())
+
+for i in range(y):
+  x = input()
+  mylist = []
+  for j in x:
+    if j == "A" or j =="a":
+      mylist.append("Hi!")
+    elif j == "e" or j == "E":
+      mylist.append("Bye!")
+    elif j == "i" or j == "I":
+      mylist.append("How are you?")
+    elif j == "o" or j == "O":
+      mylist.append("Follow me!")
+    elif j == "u" or j == "U":
+      mylist.append("Help!")
+    elif j.isdigit():
+      mylist.append("Yes!")
+  print(" ".join(mylist[0:len(mylist)]))
