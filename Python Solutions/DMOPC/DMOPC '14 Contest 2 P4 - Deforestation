@@ -1,0 +1,17 @@
+import sys
+input = sys.stdin.readline
+x = int(input())
+arr = []
+psa = [0 for i in range(x+1)]
+mylist = []
+for i in range(x):
+  arr.append(int(input()))
+for i in range(1, len(arr)+1):
+  psa[i] = psa[i-1] + arr[i-1]
+y = int(input())
+for i in range(y):
+  a, b = map(int, input().split())
+  mylist.append(psa[b+1]-psa[a])
+
+for i in mylist:
+  print(i)
