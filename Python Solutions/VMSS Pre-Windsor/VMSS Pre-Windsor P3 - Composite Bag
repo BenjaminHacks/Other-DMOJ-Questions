@@ -1,0 +1,21 @@
+import math
+listofnums = []
+x = int(input())
+count = 0
+for i in range(x):
+  listofnums.append(int(input()))
+def isprime(a):
+  if a == 1:
+    return False
+  elif a > 1:
+    for i in range(2, math.floor(math.sqrt(a))+ 1):
+       if (a % i) == 0:
+        return False
+        break
+
+  return True
+
+for i in listofnums:
+  if isprime(i) == False:
+    count+=1
+print(count)
