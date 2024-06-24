@@ -1,0 +1,14 @@
+def find(a):
+  counter = 0
+  for i in range(len(a)-1):
+    if a[i] == "<" and a[i+1] == "3":
+      counter += 1
+  return counter
+mylist = []
+y = int(input())
+for i in range(y):
+  x = input()
+  mylist.append(find(x)+1)
+  
+for i in mylist:
+  print("<3 "*i)
