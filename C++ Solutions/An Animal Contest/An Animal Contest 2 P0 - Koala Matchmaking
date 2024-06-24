@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x,counter;
+  cin >> x;
+  counter = (x-1)*2 - x;
+  cout << (counter+x)/2 << endl;
+}
