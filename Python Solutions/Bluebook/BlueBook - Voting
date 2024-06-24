@@ -1,0 +1,25 @@
+test = []
+mylist = []
+letters = ["A","B","C","D","E","F"]
+counter = 0
+x = int(input())
+for i in range(x):
+  test.append(input())
+A = test.count("A")
+B = test.count("B")
+C = test.count("C")
+D = test.count("D")
+E = test.count("E")
+F = test.count("F")
+for i in test:
+  if i not in letters:
+    counter += 1
+mylist.append(A)
+mylist.append(B)
+mylist.append(C)
+mylist.append(D)
+mylist.append(E)
+mylist.append(F)
+mylist.append(counter)
+for i in mylist:
+  print(i)
