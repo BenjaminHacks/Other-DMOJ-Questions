@@ -1,0 +1,14 @@
+y = int(input())
+mylist2 = []
+for i in range(y):
+  x = int(input())
+  mylist = []
+  mylist = list(map(int, input().split()))
+  mylist.sort()
+  least = mylist[0]
+  largest = mylist[len(mylist)-1]
+  mylist2.append(least)
+  mylist2.append(largest)
+
+for i in range(0, len(mylist2), 2):
+  print(mylist2[i], mylist2[i + 1])
