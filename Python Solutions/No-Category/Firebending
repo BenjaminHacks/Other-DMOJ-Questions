@@ -1,0 +1,8 @@
+x = int(input())
+y = 0
+listofnums = []
+for i in range(x):
+  listofnums.append(int(input()))
+for i in listofnums:
+  y += abs(i)
+print(y)
