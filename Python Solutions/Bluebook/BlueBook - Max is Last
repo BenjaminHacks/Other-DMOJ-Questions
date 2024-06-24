@@ -1,0 +1,9 @@
+x = int(input())
+test = []
+for i in range(x):
+    test.append(float(input()))
+
+for i in test:
+    if i != max(test):
+        print(f"{i:.2f}")
+print(f"{max(test):.2f}")
