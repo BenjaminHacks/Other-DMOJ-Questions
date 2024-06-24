@@ -1,0 +1,9 @@
+x = input()
+y = input()
+print(y)
+counter = 0
+y = y.lower()
+for i in y:
+  if x in i:
+    counter+=1
+print(counter)
