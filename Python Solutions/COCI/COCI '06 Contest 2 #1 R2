@@ -1,0 +1,3 @@
+number, mean = map(int, input().split())
+answer = mean*2-number
+print(answer)
