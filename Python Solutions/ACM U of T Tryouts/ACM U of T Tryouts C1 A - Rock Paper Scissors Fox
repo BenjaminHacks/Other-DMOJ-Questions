@@ -1,0 +1,24 @@
+x = int(input())
+mylist = []
+test = []
+
+def check(a,b):
+  for i in a:
+    if i == "Scissors":
+      b.append("Rock")
+    elif i == "Rock":
+      b.append("Paper")
+    elif i == "Paper":
+      b.append("Scissors")
+    elif i == "Fox":
+      b.append("Foxen")
+    elif i == "Foxen":
+      break
+
+for i in range(x):
+  mylist.append(input())
+
+check(mylist,test)
+
+for i in test:
+  print(i)
