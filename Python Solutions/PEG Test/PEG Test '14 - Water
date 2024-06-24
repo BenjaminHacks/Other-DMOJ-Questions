@@ -1,0 +1,8 @@
+a, b, c = int(input()), int(input()), int(input())
+listofnums = []
+listofnums.append(a)
+listofnums.append(b)
+listofnums.append(c)
+
+listofnums.sort()
+print(listofnums[-1]-listofnums[-2])
