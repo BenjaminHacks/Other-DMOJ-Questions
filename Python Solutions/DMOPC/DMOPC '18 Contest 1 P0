@@ -1,0 +1,9 @@
+firstnumber, secondnumber, thirdnumber = int(input()), int(input()), int(input())
+listofnum = []
+listofnum.append(firstnumber)
+listofnum.append(secondnumber)
+listofnum.append(thirdnumber)
+if listofnum == sorted(listofnum):
+  print("Good job!")
+elif listofnum != sorted(listofnum):
+  print("Try again!")
