@@ -1,0 +1,5 @@
+x = input()
+if "CCC" in x:
+  print("NO")
+else:
+  print("YES")
