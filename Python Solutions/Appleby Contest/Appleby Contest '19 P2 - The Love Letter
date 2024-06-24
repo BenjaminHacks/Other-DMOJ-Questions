@@ -1,0 +1,23 @@
+import string
+test_list = []
+test_list = list(string.ascii_lowercase)
+finish = []
+y = int(input())
+x = int(input())
+z = list(input())
+
+
+for i in z:
+  index = 0
+  if i == ' ':
+    finish.append(" ")
+  else:
+    index = test_list.index(i)
+    urmom = index+x
+    if urmom >= 26:
+      urmom = (urmom%26)
+    i = test_list[urmom]
+    finish.append(i)
+
+for i in finish:
+  print(i,end='')
